@@ -1,10 +1,10 @@
 <?php
 
-namespace App\AppBundle;
+namespace App\ApiBundle;
 
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class AppBundle extends AbstractBundle
+class ApiBundle extends AbstractBundle
 {
 
 }

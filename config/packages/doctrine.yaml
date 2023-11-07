@@ -1,12 +1,18 @@
 doctrine:
     dbal:
-        url: '%env(resolve:DATABASE_URL)%'
+        default_connection: default
+        connections:
+            default:
+                # dbname:
+                # user:
+                # password:
+                # host:
+                # profiling_collect_backtrace: '%kernel.debug%'
 
         # IMPORTANT: You MUST configure your server version,
         # either here or in the DATABASE_URL env var (see .env file)
         #server_version: '15'
 
-        profiling_collect_backtrace: '%kernel.debug%'
     orm:
         auto_generate_proxy_classes: true
         enable_lazy_ghost_objects: true
@@ -18,7 +24,7 @@ doctrine:
             App:
                 type: attribute
                 is_bundle: false
-                dir: '%kernel.project_dir%/src/AppBundle/Entity'
+                dir: '%kernel.project_dir%/src/ApiBundle/Entity'
                 prefix: 'App\Entity'
                 alias: App
 
