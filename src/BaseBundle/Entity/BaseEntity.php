@@ -9,7 +9,6 @@ use Symfony\Component\Uid\Uuid;
 #[ORM\MappedSuperclass]
 abstract class BaseEntity
 {
-
     #[ORM\Id]
     #[ORM\Column(type: Types::STRING, length: 36, unique: true, nullable: false)]
     private string $id;
