@@ -10,7 +10,6 @@ interface IBaseService
 
     public function getWithFilter(array $condition = []): array;
 
-
     public function getDetail(string $id, array $condition = []): ?BaseEntity;
 
     public function save(BaseEntity $entity, bool $flush = true): void;
