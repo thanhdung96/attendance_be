@@ -3,6 +3,7 @@
 namespace App\AppBundle\Entity;
 
 use App\AppBundle\Repository\CompetenceRepository;
+use App\BaseBundle\Entity\BaseEntity;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: CompetenceRepository::class)]

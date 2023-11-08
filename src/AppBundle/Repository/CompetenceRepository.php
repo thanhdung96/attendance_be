@@ -3,6 +3,7 @@
 namespace App\AppBundle\Repository;
 
 use App\AppBundle\Entity\Competence;
+use App\BaseBundle\Repository\BaseRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 class CompetenceRepository extends BaseRepository

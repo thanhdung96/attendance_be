@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AppBundle\Entity;
+namespace App\BaseBundle\Entity;
 
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;

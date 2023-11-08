@@ -1,10 +1,10 @@
 <?php
 
-namespace App\AppBundle\Service;
+namespace App\BaseBundle\Service;
 
-use App\AppBundle\Entity\BaseEntity;
-use App\AppBundle\Repository\BaseRepository;
-use App\AppBundle\Repository\IBaseRepository;
+use App\BaseBundle\Entity\BaseEntity;
+use App\BaseBundle\Repository\BaseRepository;
+use App\BaseBundle\Repository\IBaseRepository;
 
 abstract class BaseService implements IBaseService
 {
@@ -35,4 +35,6 @@ abstract class BaseService implements IBaseService
     public function getWithFilter(array $condition = []): array{
         return $this->repository->findOneBy($condition);
     }
+
+    abstract protected function validate(BaseEntity $entity): bool;
 }

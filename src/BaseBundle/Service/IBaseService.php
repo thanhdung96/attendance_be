@@ -1,8 +1,8 @@
 <?php
 
-namespace App\AppBundle\Service;
+namespace App\BaseBundle\Service;
 
-use App\AppBundle\Entity\BaseEntity;
+use App\BaseBundle\Entity\BaseEntity;
 
 interface IBaseService
 {
