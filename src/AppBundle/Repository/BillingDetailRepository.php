@@ -2,14 +2,14 @@
 
 namespace App\AppBundle\Repository;
 
-use App\AppBundle\Entity\PaymentInfo;
+use App\AppBundle\Entity\BillingDetail;
 use App\BaseBundle\Repository\BaseRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
-class PaymentInfoRepository extends BaseRepository
+class BillingDetailRepository extends BaseRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, PaymentInfo::class);
+        parent::__construct($registry, BillingDetail::class);
     }
 }

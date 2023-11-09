@@ -22,7 +22,7 @@ abstract class BaseEntity
     public function __construct(){
         $currentTimestamp = new \DateTime();
 
-        $this->id = Uuid::v7()->toHex();
+        $this->id = Uuid::v7()->toRfc4122();
         $this->created = $currentTimestamp;
         $this->modified = $currentTimestamp;
     }
